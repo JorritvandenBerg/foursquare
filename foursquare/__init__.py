@@ -450,7 +450,7 @@ class Foursquare(object):
             """https://developer.foursquare.com/docs/venues/menu"""
             return self.GET('{VENUE_ID}/menu'.format(VENUE_ID=VENUE_ID), params, multi=multi)
 
-        def photos(self, VENUE_ID, params, multi=False):
+        def photos(self, VENUE_ID, params={}, multi=False):
             """https://developer.foursquare.com/docs/venues/photos"""
             return self.GET('{VENUE_ID}/photos'.format(VENUE_ID=VENUE_ID), params, multi=multi)
 
